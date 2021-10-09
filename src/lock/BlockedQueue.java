@@ -9,7 +9,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * description
  * 阻塞队列 模拟BlockingQueue
  * @author fanglingxiao
- * @date 2019/7/25
  */
 public class BlockedQueue<E> {
     private int size;
