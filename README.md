@@ -1,1 +1,1 @@
-# MulitThread
+# MultiThread
