@@ -1,4 +1,4 @@
-package juc.start;
+package juc.t2_thread;
 
 /**
  * @author fanglingxiao
