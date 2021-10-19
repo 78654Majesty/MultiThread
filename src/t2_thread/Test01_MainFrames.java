@@ -1,28 +1,23 @@
-package juc.t2_thread;
+package t2_thread;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author fanglingxiao
  * @version 1.0
  * @description TODO
- * @date 2021/10/14 11:34 下午
+ * @date 2021/10/14 11:06 下午
  **/
-public class Test02_MultiThreadFrames {
+@Slf4j
+public class Test01_MainFrames {
     public static void main(String[] args) {
-        Thread t1 = new Thread() {
-            @Override
-            public void run() {
-                method1(20);
-            }
-        };
-        t1.setName("t1");
-        t1.start();
         method1(10);
     }
 
     private static void method1(int x) {
         int y = x + 1;
         Object m = method2();
-        System.out.println(m);
+        log.info("{}",m);
     }
 
     private static Object method2() {

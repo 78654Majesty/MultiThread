@@ -1,4 +1,4 @@
-package juc.t1_start;
+package t1_start;
 
 
 import lombok.extern.slf4j.Slf4j;
