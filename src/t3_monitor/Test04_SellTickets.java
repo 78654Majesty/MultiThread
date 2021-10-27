@@ -65,7 +65,7 @@ class TicketWindow {
         return count;
     }
 
-    public int sell(int amount) {
+    public synchronized int sell(int amount) {
         if (this.count >= amount) {
             this.count -= amount;
             return amount;
