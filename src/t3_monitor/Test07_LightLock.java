@@ -19,6 +19,13 @@ public class Test07_LightLock {
     public static void method2() {
         // 同步块 B
         synchronized (obj) {
+            method3();
+        }
+    }
+
+    public static void method3() {
+        // 同步块 C
+        synchronized (obj) {
         }
     }
 }
